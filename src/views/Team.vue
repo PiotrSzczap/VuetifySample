@@ -1,6 +1,6 @@
 <template>
   <div class="team">
-    <h1 class="subheading grey--text" style="margin-left: 5px;">Team</h1>
+    <h1 class="subheading grey--text" style="margin-left: 15px;">Team</h1>
 
     <v-container class="my-5">
 

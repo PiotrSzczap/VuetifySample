@@ -1,33 +1,45 @@
-import Vue from 'vue'
-import VueRouter from 'vue-router'
-import Home from '../views/Home.vue'
-import Team from '../views/Team.vue'
-import Dashboard from '../views/Dashboard.vue'
+import Vue from "vue";
+import VueRouter from "vue-router";
+import Home from "../views/Home.vue";
+import Team from "../views/Team.vue";
+import Dashboard from "../views/Dashboard.vue";
+import Projects from "../views/Projects.vue";
+import Scheduler from "../views/Scheduler.vue";
 
-Vue.use(VueRouter)
+Vue.use(VueRouter);
 
-  const routes = [
+const routes = [
   {
-    path: '/',
-    name: 'Home',
-    component: Home
+    path: "/",
+    name: "Home",
+    component: Home,
   },
   {
-    path: '/dashboard',
-    name: 'Dashboard',
-    component: Dashboard
+    path: "/dashboard",
+    name: "Dashboard",
+    component: Dashboard,
   },
   {
-    path: '/team',
-    name: 'Team',
-    component: Team
-  }
-]
+    path: "/team",
+    name: "Team",
+    component: Team,
+  },
+  {
+    path: "/projects",
+    name: "Projects",
+    component: Projects,
+  },
+  {
+    path: "/scheduler",
+    name: "Scheduler",
+    component: Scheduler,
+  },
+];
 
 const router = new VueRouter({
-  mode: 'history',
+  mode: "history",
   base: process.env.BASE_URL,
-  routes
-})
+  routes,
+});
 
-export default router
+export default router;
