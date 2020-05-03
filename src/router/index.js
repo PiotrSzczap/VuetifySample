@@ -5,6 +5,7 @@ import Team from "../views/Team.vue";
 import Dashboard from "../views/Dashboard.vue";
 import Projects from "../views/Projects.vue";
 import Scheduler from "../views/Scheduler.vue";
+import Charts from "../views/Charts.vue";
 
 Vue.use(VueRouter);
 
@@ -33,6 +34,11 @@ const routes = [
     path: "/scheduler",
     name: "Scheduler",
     component: Scheduler,
+  },
+  {
+    path: "/charts",
+    name: "Charts",
+    component: Charts,
   },
 ];
 
