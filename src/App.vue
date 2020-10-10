@@ -55,6 +55,11 @@ export default {
           icon: "mdi-chart-scatter-plot-hexbin",
           text: "Charts",
           route: "/charts"
+        },
+        {
+          icon: "mdi-pickaxe",
+          text: "Pickers",
+          route: "/pickers"
         }
       ]
     };
